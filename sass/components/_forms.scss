@@ -79,12 +79,11 @@
   display: flex;
   justify-content: center;
   font-family: var(--main-font);
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 11px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   align-items: center;
-
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -183,5 +182,5 @@
 .online-icon {
   fill: var(--text-color-theme-dark);
   margin-left: 10px;
-  // vertical-align: middle;
+  vertical-align: middle;
 }
