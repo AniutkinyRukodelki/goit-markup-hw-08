@@ -1094,7 +1094,7 @@ menu__link:focus:after {
 
 .about-icons-box {
   background-color: rgb(245, 244, 250);
-  width: 290px;
+  min-width: 290px;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
