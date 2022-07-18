@@ -1,0 +1,107 @@
+.portfolio-project {
+  flex-grow: 1;
+  border: 1px solid var(--line-project-color);
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: none;
+}
+
+.portfolio-nav-list {
+  display: flex;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  @media screen and (min-width: 768px) {
+     justify-content: center;
+      }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+}
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-item {
+  width: 100%;
+  @media screen and (min-width: 480px) {
+      max-width: 450px;
+    }
+  @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+      max-width: 370px;
+    }
+}
+
+.project-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-subtitle {
+  position: absolute;
+  top: 0;
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 24px;
+  padding-left: 24px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+      padding-top: 77px;
+      padding-bottom: 77px;
+      overflow-y: auto;
+    }
+  
+    @media screen and (min-width: 768px) {
+      padding-top: 49px;
+      padding-bottom: 77px;
+      overflow-y: auto;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 63px;
+      padding-bottom: 63px;
+      overflow-y: auto;
+    }
+  &:hover,
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
+.project-link:hover .project-subtitle,
+.project-link:focus .project-subtitle {
+  transform: translateY(0);
+}

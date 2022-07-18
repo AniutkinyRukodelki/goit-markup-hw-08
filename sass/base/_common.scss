@@ -1,0 +1,61 @@
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+.title {
+  @include font(700, 28px, 1.17, 0.03em);
+  margin-top: 0;
+  text-align: center;
+  color: var(--primary-text-color);
+  @media screen and (min-width: 1200px) {
+  @include font(null, 36px, null, null);
+}
+}
+
+.about-suptitle {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+  text-align:left;
+}
+}
+
+
+
+.about-description {
+  @include font(null, 14px, 1.71, 0.03em);
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+}
+
+//Portfolio
+.name-project {
+  margin-bottom: 4px;
+  @include font(700, 18px, 2, 0.06em);
+  color: var(--primary-text-color);
+}
+
+.our-practice {
+  font-size: 14px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 480px) {
+    font-size: 16};
+  @media screen and (min-width: 768px) {
+    font-size: 16};
+    @media screen and (min-width: 1200px) {
+   font-size: 16};
+}
