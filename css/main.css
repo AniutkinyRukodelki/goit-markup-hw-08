@@ -204,7 +204,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
-    margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -268,8 +268,6 @@ body {
   left: 50%;
   top: 50%;
   width: calc(100% - 30px);
-  height: 85%;
-  max-height: 609px;
   opacity: 1;
   visibility: visible;
   padding: 40px;
@@ -461,6 +459,7 @@ body {
 }
 
 .chek-text span {
+  flex-shrink: 0;
   display: flex;
   width: 16px;
   height: 15px;
@@ -490,7 +489,7 @@ body {
 
 .online-input {
   margin-top: 20px;
-  max-width: 290px;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -589,13 +588,10 @@ body {
   fill: var(--secondary-color);
 }
 
-.footer-social-link {
-  margin-top: 20px;
-}
-
 .footer-social-list {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .footer-social-item {
@@ -790,8 +786,8 @@ menu__link:focus:after {
   align-items: center;
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -803,6 +799,12 @@ menu__link:focus:after {
 @media screen and (min-width: 768px) {
   .connect__link {
     padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -818,6 +820,18 @@ menu__link:focus:after {
   vertical-align: middle;
 }
 
+@media screen and (min-width: 1200px) {
+  .email__icon {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .phone__icon {
+    width: 10px;
+    height: 16px;
+  }
+}
 .connect__link:hover .connect__icon,
 .connect__link:focus .connect__icon {
   fill: var(--accent-color);
@@ -1095,7 +1109,6 @@ menu__link:focus:after {
 
 .about-icons-box {
   background-color: rgb(245, 244, 250);
-  min-width: 290px;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
@@ -1379,7 +1392,6 @@ menu__link:focus:after {
 @media screen and (min-width: 768px) {
   .footer-second-part {
     margin-top: 0;
-    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
